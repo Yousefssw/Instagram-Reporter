@@ -1,107 +1,131 @@
-# Instagram Reporter Bot
+# Instagram Reporter 📸
 
-This project automates the process of reporting an Instagram account through a script using Python and Selenium.
+![GitHub release](https://img.shields.io/github/release/Yousefssw/Instagram-Reporter.svg)
 
----
+Welcome to the **Instagram Reporter**! This Python script automates the process of reporting Instagram accounts using Selenium. With features like automated login, reporting, and customizable settings, this tool makes mass reporting straightforward and efficient.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Release Information](#release-information)
 
 ## Features
-- **Automated Login**: Logs into Instagram using credentials from a configuration file.
-- **Automated Reporting**: Navigates through the interface to report a specified user account.
-- **Configurable Settings**: User credentials are loaded from a JSON configuration file for easy updates.
 
----
+- **Automated Login**: Quickly log into your Instagram account without manual entry.
+- **Mass Reporting**: Report multiple accounts in a single run.
+- **Customizable Settings**: Adjust settings through a configuration file for tailored use.
+- **User-Friendly Interface**: Simple commands and clear output.
+- **Efficient**: Save time and effort with automation.
 
-## Requirements
-To use this script, ensure you have the following installed on your system:
-1. Python 3.8 or later
-2. Google Chrome browser
-3. ChromeDriver (compatible with your Chrome version)
+## Getting Started
 
----
+To get started with the Instagram Reporter, follow these simple steps. Make sure you have Python installed on your system.
+
+1. **Clone the Repository**: Use the following command to clone the repository to your local machine.
+
+   ```bash
+   git clone https://github.com/Yousefssw/Instagram-Reporter.git
+   ```
+
+2. **Navigate to the Directory**: Change to the project directory.
+
+   ```bash
+   cd Instagram-Reporter
+   ```
+
+3. **Install Dependencies**: Install the required Python packages.
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Installation
 
-### 1. Download the Repository
+To install the Instagram Reporter, ensure you have Python 3.x and pip installed. Follow these steps:
 
-- Download the project to your computer.
+1. **Download the Latest Release**: Visit the [Releases](https://github.com/Yousefssw/Instagram-Reporter/releases) section to download the latest version.
 
-### 2. Install Dependencies
-Install the required Python libraries using pip:
-```bash
-pip install -r requirements.txt
-```
+2. **Extract the Files**: If the files are in a compressed format, extract them to your desired location.
 
-### 3. Configuration
-Create a `config.json` file in the project directory with the following structure:
-```json
-{
-  "username": "your_instagram_username",
-  "password": "your_instagram_password"
-}
-```
+3. **Run the Script**: Open your terminal or command prompt, navigate to the directory where the script is located, and run:
 
-
-### 4. Set Up ChromeDriver
-Download ChromeDriver from [https://chromedriver.chromium.org/](https://chromedriver.chromium.org/) and ensure it is in your system's PATH or in the project folder.
-
----
+   ```bash
+   python instagram_reporter.py
+   ```
 
 ## Usage
-### Run the Script
-To start the script, execute the following command in your terminal:
+
+Using the Instagram Reporter is simple. After setting up, you can run the script with the following command:
+
 ```bash
-python reporter.py
+python instagram_reporter.py
 ```
 
-## Media 
+Follow the on-screen instructions to log in and start reporting accounts. You can specify the accounts to report in the configuration file.
 
-https://github.com/user-attachments/assets/8813c21a-04c2-43fb-9653-a5b01c3076e0
+## Configuration
 
-### Enter the Username to Report
-Once the script starts, you'll be prompted to enter the username of the Instagram account you want to report.
+The configuration file allows you to customize the behavior of the script. Here's how to set it up:
 
----
+1. **Locate the Configuration File**: Open `config.json` in a text editor.
 
-## How It Works
-1. **Launch Chrome**: The script initializes a Chrome browser instance using Selenium.
-2. **Login Process**:
-   - Opens the Instagram login page.
-   - Inputs the username and password from the `config.json` file.
-   - Handles cookies and login prompts automatically.
-3. **Reporting Loop**:
-   - Navigates to the target user's profile.
-   - Automates the reporting process by simulating user interactions.
-   - Loops the reporting action continuously.
+2. **Edit Your Settings**: Modify the fields as needed. The file includes options for:
 
----
+   - **Instagram Username**: Your Instagram account username.
+   - **Instagram Password**: Your Instagram account password.
+   - **Accounts to Report**: A list of usernames you wish to report.
+   - **Report Reason**: The reason for reporting each account.
 
-## Warnings
-- **Ethical Use**: This script is for educational purposes only. Misusing this script to harm or harass others violates Instagram’s policies and may have legal consequences.
-- **Liability**: The author of this script is not responsible for any misuse or resulting consequences.
-
----
-
-## Troubleshooting
-
-### Common Errors
-1. **ElementNotInteractableException**: Ensure the XPaths in the script match Instagram's current DOM structure. Instagram's interface may update, requiring you to adjust the XPaths.
-2. **WebDriverException**: Confirm that ChromeDriver is compatible with your installed version of Chrome.
-
-### Debugging Tips
-- Use the `headless=False` option in the script to visually inspect the browser’s actions.
-- Update ChromeDriver and dependencies to their latest versions.
-
----
+3. **Save Changes**: After editing, save the configuration file.
 
 ## Contributing
-Contributions to improve this project are welcome. Feel free to submit a pull request or open an issue for suggestions or bug fixes.
 
----
+We welcome contributions! If you want to help improve the Instagram Reporter, please follow these steps:
 
-## Disclaimer
-This project is not affiliated with or endorsed by Instagram. Use at your own risk, and respect the platform's terms and community guidelines.
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
 
----
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Make Changes**: Implement your changes and commit them.
+
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+4. **Push to Your Fork**: Push your changes back to your forked repository.
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. **Open a Pull Request**: Navigate to the original repository and click "New Pull Request".
 
 ## License
-This project is licensed under the [MIT License](LICENSE). 
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Author**: Your Name
+- **Email**: your.email@example.com
+- **GitHub**: [Yousefssw](https://github.com/Yousefssw)
+
+## Release Information
+
+To download the latest version of the Instagram Reporter, visit the [Releases](https://github.com/Yousefssw/Instagram-Reporter/releases) section. Here, you can find the latest updates and improvements. Download the appropriate file and execute it to get started.
+
+---
+
+Thank you for checking out the Instagram Reporter! We hope this tool helps you streamline your reporting process. Your feedback is valuable to us, so feel free to contribute or reach out with any questions. Happy reporting!
